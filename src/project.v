@@ -23,6 +23,12 @@ module tt_um_disp1 (
   reg E;
 
     
+    reg [5:0] counter = 6'h0;
+    reg [3:0] seq = 4'h0;
+    //reg enable;
+    reg [4:0] data;
+    //wire rst_n = 1;
+    
     always @(posedge clk) begin
         if (!rst_n) begin
             counter <= 0;
