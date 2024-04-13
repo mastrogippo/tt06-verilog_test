@@ -53,15 +53,15 @@ wire [7:0] p = {2'b00, ine1, ine2, ine3, ine4, ine5, ine6};
  wire[31:0] le8d = 32'b00001010000010100100010100100001;
 
  
- reg [7:0] le0 = le0d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le1 = le1d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le2 = le2d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le3 = le3d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le4 = le4d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le5 = le5d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le6 = le6d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le7 = le7d[{in2, in1, 3'b000}+:8] ^ p;
- reg [7:0] le8 = le8d[{in2, in1, 3'b000}+:8] ^ p;
+wire [7:0] le0 = le0d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le1 = le1d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le2 = le2d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le3 = le3d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le4 = le4d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le5 = le5d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le6 = le6d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le7 = le7d[{in2, in1, 3'b000}+:8] ^ p;
+ wire [7:0] le8 = le8d[{in2, in1, 3'b000}+:8] ^ p;
 
     always @(posedge clk) begin
         if (!rst_n) begin
