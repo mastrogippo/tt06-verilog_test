@@ -36,7 +36,7 @@ module tt_um_disp1 (
     wire ine6 = ui_in[7];
 
 
-reg [7:0] p = {2'b00, ine1, ine2, ine3, ine4, ine5, ine6};
+wire [7:0] p = {2'b00, ine1, ine2, ine3, ine4, ine5, ine6};
 
     reg [5:0] counter = 6'h0;
     reg [7:0] seq = 7'h0;
